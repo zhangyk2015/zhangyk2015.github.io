@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-28T08:45:23.833Z</updated>
+  <updated>2020-07-28T09:03:09.572Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>shadowsockets</title>
+    <title>Shadowsocks搭建配置</title>
     <link href="https://zhangyk2015.github.io/2020/07/28/shadowsockets/"/>
     <id>https://zhangyk2015.github.io/2020/07/28/shadowsockets/</id>
     <published>2020-07-28T08:35:39.000Z</published>
-    <updated>2020-07-28T08:45:23.833Z</updated>
+    <updated>2020-07-28T09:03:09.572Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,11 @@
       
         
         
-          &lt;div style=&quot;font-size: 22px; padding: 0 15px 0; margin-bottom: 20px;&quot;&gt;
+          &lt;div style=&quot;padding-bottom: 24px;&quot;&gt;Shadowsocks搭建配置&lt;/div&gt;
 
-&lt;div style=&quot;padding-bottom:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;apt install python python-pip
         
       
     
