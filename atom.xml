@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-28T01:08:50.868Z</updated>
+  <updated>2020-07-28T02:05:29.498Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="https://zhangyk2015.github.io/2020/07/28/test/"/>
-    <id>https://zhangyk2015.github.io/2020/07/28/test/</id>
-    <published>2020-07-28T01:08:11.000Z</published>
-    <updated>2020-07-28T01:08:50.868Z</updated>
+    <title>init</title>
+    <link href="https://zhangyk2015.github.io/2020/07/28/init/"/>
+    <id>https://zhangyk2015.github.io/2020/07/28/init/</id>
+    <published>2020-07-28T01:11:29.000Z</published>
+    <updated>2020-07-28T02:05:29.498Z</updated>
     
     <summary type="html">
     
@@ -29,15 +29,19 @@
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;author:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;|&lt;br&gt;  Yakun Zhang&lt;a href=&quot;zhangyk2015\@lzu.edu.cn&quot;&gt;^1&lt;/a&gt;&lt;br&gt;  Lanzhou
+          &lt;p&gt;##Hexo常用命令&lt;br&gt;npm install hexo -g #安装Hexo&lt;br&gt;npm update hexo -g #升级&lt;br&gt;hexo init #初始化博客&lt;/p&gt;
+&lt;p&gt;命令简写&lt;br&gt;hexo n “我的博客” == hexo new “我的博客”
         
       
     
     </summary>
     
+      <category term="blog相关" scheme="https://zhangyk2015.github.io/categories/blog%E7%9B%B8%E5%85%B3/"/>
+    
+    
+      <category term="blog写作" scheme="https://zhangyk2015.github.io/tags/blog%E5%86%99%E4%BD%9C/"/>
+    
+      <category term="blog发布" scheme="https://zhangyk2015.github.io/tags/blog%E5%8F%91%E5%B8%83/"/>
     
   </entry>
   

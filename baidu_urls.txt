@@ -1,2 +1,2 @@
-https://zhangyk2015.github.io/2020/07/28/test/
+https://zhangyk2015.github.io/2020/07/28/init/
 https://zhangyk2015.github.io/2020/02/16/sort-algorithms/
