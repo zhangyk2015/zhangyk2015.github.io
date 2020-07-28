@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-28T02:10:30.906Z</updated>
+  <updated>2020-07-28T03:17:48.245Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhangyk2015.github.io/2020/07/28/init/"/>
     <id>https://zhangyk2015.github.io/2020/07/28/init/</id>
     <published>2020-07-28T01:11:29.000Z</published>
-    <updated>2020-07-28T02:10:30.906Z</updated>
+    <updated>2020-07-28T03:17:48.245Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,8 @@
       
         
         
-          &lt;p&gt;##Hexo常用命令&lt;br&gt;npm install hexo -g #安装Hexo&lt;br&gt;npm update hexo -g #升级&lt;br&gt;hexo init #初始化博客&lt;/p&gt;
-&lt;p&gt;命令简写&lt;br&gt;hexo n “我的博客” == hexo new “我的博客”
+          &lt;p&gt;##安装Node.js&lt;br&gt;安装稳定版，否则不支持hexo deploy。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;添加镜像源&lt;/strong&gt;：&lt;code&gt;npm config set registry
         
       
     
