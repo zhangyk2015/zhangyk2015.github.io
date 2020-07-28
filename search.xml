@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>shadowsockets</title>
+      <link href="/2020/07/28/shadowsockets/"/>
+      <url>/2020/07/28/shadowsockets/</url>
+      
+        <content type="html"><![CDATA[<div style="font-size: 22px; padding: 0 15px 0; margin-bottom: 20px;"><div style="padding-bottom: 24px;">Shadowsocks搭建配置</div></div><ul><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>apt install python python-pip python-m2crypto</span></span></p></li><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>安装shadowsocks</span></span></p><ul><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>pip install shadowsocks</span></span></li></ul></li><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>配置文件/etc/shadowsocks/config.json</span></span></p><ul><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>单用户</span></span><br><span class="note" style="display: inline-block; color: rgb(136, 136, 136); line-height: 22px; min-height: 22px; font-size: 14px; padding: 3px 0px 2px 17px; margin-left: -17px; border-left: 1px solid rgb(235, 235, 235);">{<br>“server”:”ip”,<br>“server_port”:8888,<br>“local_address”: “127.0.0.1”,<br>“local_port”:1080,<br>“password”:”123456789”,<br>“timeout”:300,<br>“method”:”rc4-md5”,<br>“fast_open”: true,<br>“workers”: 1<br>}  </span></p><p>​</p></li><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>多用户</span></span><br><span class="note" style="display: inline-block; color: rgb(136, 136, 136); line-height: 22px; min-height: 22px; font-size: 14px; padding: 3px 0px 2px 17px; margin-left: -17px; border-left: 1px solid rgb(235, 235, 235);">{<br>“server”:”ip”,<br>“local_address”: “127.0.0.1”,<br>“local_port”:1080,<br>“port_password”:{<br>“8888”:”20181023”,<br>“9001”:”mimawhat”<br>},<br>“timeout”:300,<br>“method”:”rc4-md5”,<br>“fast_open”: true,<br>“workers”: 2<br>}  </span></p></li></ul></li><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>启动/停止shadowsocks</span></span></p><ul><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>ssserver -c /etc/shadowsocks/config.json -d start</span> <span>#可写在脚本中</span></span></li><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>ssserver -d stop</span></span></li></ul></li><li><p><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>优化配置</span></span></p><ul><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>vim /etc/security/limits.conf</span></span><br><span class="note" style="display: inline-block; color: rgb(136, 136, 136); line-height: 22px; min-height: 22px; font-size: 14px; padding: 3px 0px 2px 17px; margin-left: -17px; border-left: 1px solid rgb(235, 235, 235);">* soft nofile 51200  <ul><li>hard nofile 51200​</li></ul></span></li></ul></li><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>ulimit -n 51200</span></span></li><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>vim /etc/sysctl.conf</span></span><br><span class="note" style="display: inline-block; color: rgb(136, 136, 136); line-height: 22px; min-height: 22px; font-size: 14px; padding: 3px 0px 2px 17px; margin-left: -17px; border-left: 1px solid rgb(235, 235, 235);">fs.file-max = 51200<br>net.core.rmem_max = 67108864<br>net.core.wmem_max = 67108864<br>net.core.netdev_max_backlog = 250000<br>net.core.somaxconn = 4096<br>net.ipv4.tcp_syncookies = 1<br>net.ipv4.tcp_tw_reuse = 1<br>net.ipv4.tcp_tw_recycle = 0<br>net.ipv4.tcp_fin_timeout = 30<br>net.ipv4.tcp_keepalive_time = 1200<br>net.ipv4.ip_local_port_range = 10000 65000<br>net.ipv4.tcp_max_syn_backlog = 8192<br>net.ipv4.tcp_max_tw_buckets = 5000<br>net.ipv4.tcp_fastopen = 3<br>net.ipv4.tcp_mem = 25600 51200 102400<br>net.ipv4.tcp_rmem = 4096 87380 67108864<br>net.ipv4.tcp_wmem = 4096 65536 67108864<br>net.ipv4.tcp_mtu_probing = 1<br>net.ipv4.tcp_congestion_control = hybla</span></li><li><span class="content mubu-node" style="line-height: 24px; min-height: 24px; font-size: 16px; padding: 2px 0px; display: inline-block; vertical-align: top;"><span>sysctl -p</span></span></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> s科学上网 </tag>
+            
+            <tag> shadowsocks </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客初始化</title>
       <link href="/2020/07/28/init/"/>
       <url>/2020/07/28/init/</url>
