@@ -499,7 +499,7 @@ pip install shadowsocks
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    262
+                    206
                 </div>
                 
 
@@ -536,31 +536,33 @@ pip install shadowsocks
 <li><p>配置文件/etc/shadowsocks/config.json</p>
 <ul>
 <li><p>单用户  </p>
-<pre><code>{  
-    &quot;server&quot;:&quot;ip&quot;,  
-    &quot;server_port&quot;:8888,  
-    &quot;local_address&quot;: &quot;127.0.0.1&quot;,  
-    &quot;local_port&quot;:1080,  
-    &quot;password&quot;:&quot;123456789&quot;,  
-    &quot;timeout&quot;:300,  
-    &quot;method&quot;:&quot;rc4-md5&quot;,  
-    &quot;fast_open&quot;: true,  
-    &quot;workers&quot;: 1  
-}  ```</code></pre></li>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span>  
+    <span class="token property">"server"</span><span class="token operator">:</span><span class="token string">"ip"</span><span class="token punctuation">,</span>  
+    <span class="token property">"server_port"</span><span class="token operator">:</span><span class="token number">8888</span><span class="token punctuation">,</span>  
+    <span class="token property">"local_address"</span><span class="token operator">:</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span>  
+    <span class="token property">"local_port"</span><span class="token operator">:</span><span class="token number">1080</span><span class="token punctuation">,</span>  
+    <span class="token property">"password"</span><span class="token operator">:</span><span class="token string">"123456789"</span><span class="token punctuation">,</span>  
+    <span class="token property">"timeout"</span><span class="token operator">:</span><span class="token number">300</span><span class="token punctuation">,</span>  
+    <span class="token property">"method"</span><span class="token operator">:</span><span class="token string">"rc4-md5"</span><span class="token punctuation">,</span>  
+    <span class="token property">"fast_open"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  
+    <span class="token property">"workers"</span><span class="token operator">:</span> <span class="token number">1</span>  
+<span class="token punctuation">}</span>  ```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li><p>多用户 </p>
-<pre><code>{  
-    &quot;server&quot;:&quot;ip&quot;,  
-    &quot;local_address&quot;: &quot;127.0.0.1&quot;,  
-    &quot;local_port&quot;:1080,  
-    &quot;port_password&quot;:{  
-        &quot;8888&quot;:&quot;20181023&quot;,  
-        &quot;9001&quot;:&quot;mimawhat&quot;  
-    },  
-    &quot;timeout&quot;:300,  
-    &quot;method&quot;:&quot;rc4-md5&quot;,  
-    &quot;fast_open&quot;: true,  
-    &quot;workers&quot;: 2  
-}  </code></pre></li>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span>  
+    <span class="token property">"server"</span><span class="token operator">:</span><span class="token string">"ip"</span><span class="token punctuation">,</span>  
+    <span class="token property">"local_address"</span><span class="token operator">:</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span>  
+    <span class="token property">"local_port"</span><span class="token operator">:</span><span class="token number">1080</span><span class="token punctuation">,</span>  
+    <span class="token property">"port_password"</span><span class="token operator">:</span><span class="token punctuation">{</span>  
+        <span class="token property">"8888"</span><span class="token operator">:</span><span class="token string">"20181023"</span><span class="token punctuation">,</span>  
+        <span class="token property">"9001"</span><span class="token operator">:</span><span class="token string">"mimawhat"</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>  
+    <span class="token property">"timeout"</span><span class="token operator">:</span><span class="token number">300</span><span class="token punctuation">,</span>  
+    <span class="token property">"method"</span><span class="token operator">:</span><span class="token string">"rc4-md5"</span><span class="token punctuation">,</span>  
+    <span class="token property">"fast_open"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  
+    <span class="token property">"workers"</span><span class="token operator">:</span> <span class="token number">2</span>  
+<span class="token punctuation">}</span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ul>
 </li>
 <li><p>启动/停止shadowsocks</p>
@@ -577,8 +579,8 @@ pip install shadowsocks
 </ul>
 </li>
 <li><code>ulimit -n 51200</code></li>
-<li><code>vim /etc/sysctl.conf</code>  </li>
-<li><code>fs.file-max = 51200  
+<li><code>vim /etc/sysctl.conf</code>  <ul>
+<li><pre><code>fs.file-max = 51200  
 net.core.rmem_max = 67108864  
 net.core.wmem_max = 67108864  
 net.core.netdev_max_backlog = 250000  
@@ -596,7 +598,9 @@ net.ipv4.tcp_mem = 25600 51200 102400
 net.ipv4.tcp_rmem = 4096 87380 67108864  
 net.ipv4.tcp_wmem = 4096 65536 67108864  
 net.ipv4.tcp_mtu_probing = 1  
-net.ipv4.tcp_congestion_control = hybla</code></li>
+net.ipv4.tcp_congestion_control = hybla</code></pre></li>
+</ul>
+</li>
 <li><code>sysctl -p</code></li>
 </ul>
 </li>
@@ -1357,7 +1361,7 @@ net.ipv4.tcp_congestion_control = hybla</code></li>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">2.2k</span>
+            <span class="white-color">2.1k</span>
             
 
             <br>
