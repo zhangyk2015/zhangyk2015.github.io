@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-28T07:33:00.070Z</updated>
+  <updated>2020-07-28T07:35:53.940Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhangyk2015.github.io/2020/07/28/init/"/>
     <id>https://zhangyk2015.github.io/2020/07/28/init/</id>
     <published>2020-07-28T01:11:29.000Z</published>
-    <updated>2020-07-28T07:33:00.070Z</updated>
+    <updated>2020-07-28T07:35:53.940Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,7 @@
       
         
         
-          &lt;p&gt;##安装Node.js&lt;br&gt;安装稳定版，否则不支持hexo deploy。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;添加镜像源&lt;/strong&gt;：&lt;code&gt;npm config set registry
+          &lt;h2 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装Node.js&lt;/h2&gt;&lt;p&gt;安装稳定版，否则不支持hexo
         
       
     
