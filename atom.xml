@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-28T09:20:51.251Z</updated>
+  <updated>2020-07-30T01:42:23.887Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhangyk2015.github.io/2020/07/28/shadowsockets/"/>
     <id>https://zhangyk2015.github.io/2020/07/28/shadowsockets/</id>
     <published>2020-07-28T08:35:39.000Z</published>
-    <updated>2020-07-28T09:20:51.251Z</updated>
+    <updated>2020-07-30T01:42:23.887Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,12 @@
       
         
         
-          &lt;div style=&quot;padding-bottom: 24px;&quot;&gt;Shadowsocks搭建配置&lt;/div&gt;
-
-
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;apt install python python-pip python-m2crypto&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装shadowsocks&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;apt install python python-pip
+&lt;li&gt;&lt;code&gt;pip install
         
       
     
@@ -81,7 +82,7 @@
     <link href="https://zhangyk2015.github.io/2020/02/16/sort-algorithms/"/>
     <id>https://zhangyk2015.github.io/2020/02/16/sort-algorithms/</id>
     <published>2020-02-16T07:09:23.000Z</published>
-    <updated>2020-07-27T10:12:38.833Z</updated>
+    <updated>2020-07-30T01:41:23.391Z</updated>
     
     <summary type="html">
     
@@ -89,11 +90,9 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot;
+          &lt;p&gt;;&amp;gt; 关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;p&gt;;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
         
       
     
