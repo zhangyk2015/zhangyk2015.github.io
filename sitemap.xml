@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhangyk2015.github.io/2020/02/16/sort-algorithms/</loc>
+    
+    <lastmod>2020-07-30T02:55:38.383Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhangyk2015.github.io/2020/07/28/init/</loc>
     
     <lastmod>2020-07-30T02:36:44.451Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://zhangyk2015.github.io/2020/07/28/shadowsockets/</loc>
     
     <lastmod>2020-07-30T01:42:23.887Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangyk2015.github.io/2020/02/16/sort-algorithms/</loc>
-    
-    <lastmod>2020-07-30T01:41:23.391Z</lastmod>
     
   </url>
   
@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://zhangyk2015.github.io/contact/index.html</loc>
+    <loc>https://zhangyk2015.github.io/categories/index.html</loc>
     
     <lastmod>2020-07-27T10:12:38.835Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhangyk2015.github.io/categories/index.html</loc>
+    <loc>https://zhangyk2015.github.io/contact/index.html</loc>
     
     <lastmod>2020-07-27T10:12:38.835Z</lastmod>
     
