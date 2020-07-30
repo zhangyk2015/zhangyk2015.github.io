@@ -491,7 +491,7 @@ n">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    277
+                    307
                 </div>
                 
 
@@ -522,6 +522,8 @@ n">
 <p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
 <p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
 <h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>在blog根目录里的_config.yml文件称为<strong>站点</strong>配置文件。根目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题</strong>配置文件</p>
+<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><h3 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h3><p>在主题的_config.yml文件中，设置gitalk的Client ID、Client Secret。由Github的OAuth Application提供，<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">链接</a></p>
+<h3 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h3><p>详情见<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></p>
 <h2 id="文件开头"><a href="#文件开头" class="headerlink" title="文件开头"></a>文件开头</h2><p>title: 文章标题<br>catalog: 是否显示段落目录<br>date: 文章日期<br>subtitle: 子标题<br>header-img: 顶部背景图片<br>top: 是否置顶<br>tags: 标签<br>categories: 分类</p>
 
             </div>
@@ -988,8 +990,8 @@ n">
 <script>
     new Valine({
         el: '#vcomments',
-        appId: '',
-        appKey: '',
+        appId: 'B3wiyeA4PI4nFWhsnmsfNcMj-gzGzoHsz',
+        appKey: '76BtwB3VJUQJx5fHJy9hzzGt',
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'false' === 'true',
