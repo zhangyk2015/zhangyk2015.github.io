@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhangyk2015.github.io/contact/index.html</loc>
+    
+    <lastmod>2020-07-30T03:37:37.798Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhangyk2015.github.io/2020/02/16/sort-algorithms/</loc>
     
     <lastmod>2020-07-30T03:33:09.463Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://zhangyk2015.github.io/tags/index.html</loc>
     
     <lastmod>2020-07-27T10:12:38.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangyk2015.github.io/contact/index.html</loc>
-    
-    <lastmod>2020-07-27T10:12:38.835Z</lastmod>
     
   </url>
   
