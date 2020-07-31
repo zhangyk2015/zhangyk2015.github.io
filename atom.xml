@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-30T03:27:42.855Z</updated>
+  <updated>2020-07-31T01:00:51.759Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>latex公式编号</title>
+    <link href="https://zhangyk2015.github.io/2020/07/31/latex-gong-shi-bian-hao/"/>
+    <id>https://zhangyk2015.github.io/2020/07/31/latex-gong-shi-bian-hao/</id>
+    <published>2020-07-31T00:50:26.000Z</published>
+    <updated>2020-07-31T01:00:51.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;多行公式的编号技巧&quot;&gt;&lt;a href=&quot;#多行公式的编号技巧&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Shadowsocks搭建配置</title>

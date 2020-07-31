@@ -4,14 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="博客初始化, LinkPrediction ComplexNetwork">
+    <meta name="keywords" content="latex公式编号, LinkPrediction ComplexNetwork">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="安装Node.js安装稳定版，否则不支持hexo deploy。
-添加镜像源：npm config set registry https://registry.npm.taobao.org
-安装hexonpm i hexo-cli -g
-n">
+    <meta name="description" content="多行公式的编号技巧amsmath包对于行间公式的输出提供了非常强大的功能,我们今天则是介绍基于amsmath 包如何去实现特定的多行公式编号技巧.
+1 多行公式一个编号在换行的公式中,如果直接用 align 环境会给每行都编号, align">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@ n">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>博客初始化 | 张亚坤的博客</title>
+    <title>latex公式编号 | 张亚坤的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -332,13 +330,13 @@ n">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        博客初始化
+                        latex公式编号
                     </div>
                 </div>
             </div>
@@ -448,28 +446,11 @@ n">
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        
-                        <a href="/tags/blog写作/" target="_blank">
-                            <span class="chip bg-color">blog写作</span>
-                        </a>
-                        
-                        <a href="/tags/blog发布/" target="_blank">
-                            <span class="chip bg-color">blog发布</span>
-                        </a>
-                        
+                        <span class="chip bg-color">无标签</span>
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                        <a href="/categories/blog相关/" class="post-category" target="_blank">
-                            blog相关
-                        </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -477,7 +458,7 @@ n">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-28
+                    2020-07-31
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -491,14 +472,14 @@ n">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    307
+                    678
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
                 
@@ -514,17 +495,55 @@ n">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>安装稳定版，否则不支持hexo deploy。</p>
-<p><strong>添加镜像源</strong>：<code>npm config set registry https://registry.npm.taobao.org</code></p>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p><code>npm i hexo-cli -g</code></p>
-<p><code>npm i hexo-deployer-git</code> #发布扩展</p>
-<h2 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h2><p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
-<p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
-<p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>在blog根目录里的_config.yml文件称为<strong>站点</strong>配置文件。根目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题</strong>配置文件</p>
-<h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><h3 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h3><p>在主题的_config.yml文件中，设置gitalk的Client ID、Client Secret。由Github的OAuth Application提供，<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">链接</a></p>
-<h3 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h3><p>详情见<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></p>
-<h2 id="文件开头"><a href="#文件开头" class="headerlink" title="文件开头"></a>文件开头</h2><p>title: 文章标题<br>catalog: 是否显示段落目录<br>date: 文章日期<br>subtitle: 子标题<br>header-img: 顶部背景图片<br>top: 是否置顶<br>tags: 标签<br>categories: 分类</p>
+                <h1 id="多行公式的编号技巧"><a href="#多行公式的编号技巧" class="headerlink" title="多行公式的编号技巧"></a>多行公式的编号技巧</h1><p>amsmath包对于行间公式的输出提供了非常强大的功能,我们今天则是介绍基于<br><strong>amsmath</strong> 包如何去实现特定的多行公式编号技巧.</p>
+<h2 id="1-多行公式一个编号"><a href="#1-多行公式一个编号" class="headerlink" title="1 多行公式一个编号"></a>1 多行公式一个编号</h2><p>在换行的公式中,如果直接用 <strong>align</strong> 环境会给每行都编号, <strong>align*</strong> 环境则每一行都没<br>有编号.但是我们可以用\notag命令指定某些行不编号,如</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">align</span><span class="token punctuation">}</span><span class="token equation string">
+a&amp;=b+c<span class="token equation-command regex">\notag</span><span class="token equation-command regex">\\</span>
+a^2&amp;=b^2+c^2<span class="token equation-command regex">\\</span>
+a^3&amp;=b^3+c^3<span class="token equation-command regex">\notag</span>
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">align</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>?<br>\begin{align}<br>a&amp;=b+c\notag\<br>a^2&amp;=b^2+c^2\<br>a^3&amp;=b^3+c^3\notag<br>\end{align}<br>?</p>
+<p>除了用 align 环境之外,我们还可以用次环境 aligned 来更好地实现这种效果</p>
+<pre><code>\begin{align}\begin{aligned}
+a&amp;=b+c\\
+a^2&amp;=b^2+c^
+\end{aligned}\end{align}</code></pre><p>?<br>\begin{align}\begin{aligned}<br>a&amp;=b+c\<br>a^2&amp;=b^2+c^<br>\end{aligned}\end{align}<br>?<br>aligned 环境可以看成一个盒子,我们还可以给这个盒子添加定界符</p>
+<pre><code>\begin{align}
+\left\{\begin{aligned}
+&amp;a=b+c\\
+&amp;a^2=b^2+c^
+\end{aligned}\right.\end{align}</code></pre><p>?<br>\begin{align}<br>\left{\begin{aligned}<br>&amp;a=b+c\<br>&amp;a^2=b^2+c^<br>\end{aligned}\right.\end{align}<br>?<br>指定不同块按等号对齐,同时每个区块一个编号,这时用 split 次环境</p>
+<pre><code>\begin{align}
+a+b&amp;=b+c\\
+\begin{split}
+a&amp;=b+c\\
+a^2&amp;=b^2+c^
+\end{split}\\
+\begin{split}
+a&amp;=b+c\\
+a^2&amp;=b^2+c^
+\end{split}
+\end{align}</code></pre><p>?<br>\begin{align}<br>a+b&amp;=b+c\<br>\begin{split}<br>a&amp;=b+c\<br>a^2&amp;=b^2+c^<br>\end{split}\<br>\begin{split}<br>a&amp;=b+c\<br>a^2&amp;=b^2+c^<br>\end{split}<br>\end{align}<br>?</p>
+<p>一行两个公式两个编号,这种情况自然需要 minipage 环境支持了.</p>
+<pre><code>\begin{minipage}{0.5\textwidth}
+\begin{equation}
+a^2+b^2=c^
+\end{equation}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{equation}
+a^3=b^3+c^
+\end{equation}
+\end{minipage}</code></pre><p>?<br>\begin{minipage}{0.5\textwidth}<br>\begin{equation}<br>a^2+b^2=c^<br>\end{equation}<br>\end{minipage}<br>\begin{minipage}{0.5\textwidth}<br>\begin{equation}<br>a^3=b^3+c^<br>\end{equation}<br>\end{minipage}<br>?<br>给带定界符的方程组的每一行都编号,这种情况 <strong>amsmath</strong> 包无法实现,我们可以用<br><strong>cases</strong> 包的 <strong>numcases</strong> 环境</p>
+<pre><code>%\usepackage{cases}
+\begin{numcases}{f(x)=}%f(x)=可以置空
+1,&amp;$x\in\mathbb Q$\\
+0,&amp;$x\notin\mathbb Q$
+\end{numcases}.</code></pre><p>?<br>%\usepackage{cases}<br>\begin{numcases}{f(x)=}%f(x)=可以置空<br>1,&amp;$x\in\mathbb Q$\<br>0,&amp;$x\notin\mathbb Q$<br>\end{numcases}.<br>?<br>不过上述 <strong>numcases</strong> 环境的效果是不尽如人意的,更好的效果是用 <strong>empheq</strong> 包,它可<br>以给 <strong>amsmath</strong> 包提供的数学环境添加各种定界符.</p>
+<pre><code>\begin{empheq}[left=\empheqlbrace,right=\empheqrbrack]{align}
+&amp;a=b+c&amp;&amp;a=b\\
+&amp;a^2=b^2+c^2&amp;&amp;a=b
+\end{empheq}</code></pre><p>?<br>\begin{empheq}[left=\empheqlbrace,right=\empheqrbrack]{align}<br>&amp;a=b+c&amp;&amp;a=b\<br>&amp;a^2=b^2+c^2&amp;&amp;a=b<br>\end{empheq}<br>?</p>
 
             </div>
             <hr />
@@ -683,9 +702,9 @@ n">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《博客初始化》
+                    《latex公式编号》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/07/28/init/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/07/31/latex-gong-shi-bian-hao/" property="cc:attributionName"
                rel="cc:attributionURL">
                 张亚坤
             </a> 采用
@@ -726,7 +745,7 @@ n">
         repo: 'zhangyk2015.github.io',
         owner: 'zhangyk2015',
         admin: "zhangyk2015",
-        id: '2020/07/28/init/',
+        id: '2020/07/31/latex-gong-shi-bian-hao/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1009,9 +1028,46 @@ n">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/07/31/latex-gong-shi-bian-hao/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="latex公式编号">
+                        
+                        <span class="card-title">latex公式编号</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            多行公式的编号技巧amsmath包对于行间公式的输出提供了非常强大的功能,我们今天则是介绍基于amsmath 包如何去实现特定的多行公式编号技巧.
+1 多行公式一个编号在换行的公式中,如果直接用 align 环境会给每行都编号, align
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-31
+                            </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/07/28/shadowsockets/">
                     <div class="card-image">
@@ -1029,9 +1085,9 @@ n">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1053,59 +1109,6 @@ n">
                     
                     <a href="/tags/shadowsocks/" target="_blank">
                         <span class="chip bg-color">shadowsocks</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/02/16/sort-algorithms/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="十大经典排序算法整理汇总（附代码）">
-                        
-                        <span class="card-title">十大经典排序算法整理汇总（附代码）</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            本文整理并总结了十大经典的排序算法（冒泡排序、选择排序、插入排序、快速排序、归并排序、希尔排序、计数排序、基数排序、桶排序、堆排序）的时间复杂度、空间复杂度等性质。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-16
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/编程算法/" class="post-category" target="_blank">
-                                    编程算法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/leetcode/" target="_blank">
-                        <span class="chip bg-color">leetcode</span>
-                    </a>
-                    
-                    <a href="/tags/算法/" target="_blank">
-                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
