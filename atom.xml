@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-07-31T02:57:39.907Z</updated>
+  <updated>2020-08-13T03:17:43.297Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序开发入门</title>
+    <link href="https://zhangyk2015.github.io/2020/08/12/wei-xin-xiao-cheng-xu-kai-fa-ru-men/"/>
+    <id>https://zhangyk2015.github.io/2020/08/12/wei-xin-xiao-cheng-xu-kai-fa-ru-men/</id>
+    <published>2020-08-12T09:43:45.000Z</published>
+    <updated>2020-08-13T03:17:43.297Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;使用和Vue.js语法相似的&lt;a href=&quot;https://wepyjs.github.io/wepy-docs/1.x/#/&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件开发" scheme="https://zhangyk2015.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="微信小程序" scheme="https://zhangyk2015.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>latex公式编号</title>
