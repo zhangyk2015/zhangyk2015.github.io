@@ -9,7 +9,7 @@
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="前言使用和Vue.js语法相似的WePy脚手架框架 1.x版本，便于入手，学习成本低。组件使用Vant Weapp，其中包含大量已实现的组件，如复选框、下拉菜单等。其余API调用等参考微信开发文档。
-初始化2.0 技术选型1.wepy 框架">
+初始化0 技术选型1.wepy 框架（腾">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -509,7 +509,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用和Vue.js语法相似的<a href="https://wepyjs.github.io/wepy-docs/1.x/#/" target="_blank" rel="noopener">WePy脚手架框架 1.x版本</a>，便于入手，学习成本低。组件使用<a href="https://youzan.github.io/vant-weapp/#/quickstart" target="_blank" rel="noopener">Vant Weapp</a>，其中包含大量已实现的组件，如复选框、下拉菜单等。其余API调用等参考<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener">微信开发文档</a>。</p>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="2-0-技术选型"><a href="#2-0-技术选型" class="headerlink" title="2.0 技术选型"></a><strong>2.0 技术选型</strong></h3><p>1.wepy 框架（腾讯开发的一款小程序框架）（官网：<a href="https://wepyjs.github.io/wepy-docs/1.x/#/" target="_blank" rel="noopener">https://wepyjs.github.io/wepy-docs/1.x/#/</a>      1.x版本）</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="0-技术选型"><a href="#0-技术选型" class="headerlink" title="0 技术选型"></a><strong>0 技术选型</strong></h3><p>1.wepy 框架（腾讯开发的一款小程序框架）（官网：<a href="https://wepyjs.github.io/wepy-docs/1.x/#/" target="_blank" rel="noopener">https://wepyjs.github.io/wepy-docs/1.x/#/</a>      1.x版本）</p>
 <p>2.安装脚手架 wepy-cli</p>
 <pre class="line-numbers language-kotlin"><code class="language-kotlin"><span class="token comment" spellcheck="true">//查看版本</span>
 npm ls <span class="token operator">-</span>g <span class="token operator">--</span>depth<span class="token operator">=</span><span class="token number">0</span>
@@ -543,7 +543,7 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h3 id="2-1-初始化项目"><a href="#2-1-初始化项目" class="headerlink" title="2.1 初始化项目"></a>2.1 初始化项目</h3><ol>
+<h3 id="1-初始化项目"><a href="#1-初始化项目" class="headerlink" title="1 初始化项目"></a>1 初始化项目</h3><ol>
 <li><p>运行 <code>wepy init standard myproject</code>命令，初始化小程序项目  </p>
 <p>注：1.7.0 之前的版本使用 <code>wepy new myproject</code></p>
 </li>
@@ -558,14 +558,14 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
 <li><p>解决 ESLint 语法报错问题</p>
 </li>
 </ol>
-<h3 id="2-2-梳理项目结构"><a href="#2-2-梳理项目结构" class="headerlink" title="2.2 梳理项目结构"></a>2.2 梳理项目结构</h3><ol>
+<h3 id="2-梳理项目结构"><a href="#2-梳理项目结构" class="headerlink" title="2 梳理项目结构"></a>2 梳理项目结构</h3><ol>
 <li>清理并重置 <code>src -&gt; pages -&gt; index.wpy</code> 首页</li>
 <li>在根目录的 <code>.prettierrc</code> 配置文件内，新增 <code>&quot;semi&quot;: false</code> 配置，防止每次格式化代码，添加分号的问题</li>
 <li>清理并重置 <code>src -&gt; app.wpy</code> 中的代码，将 <code>style</code> 和 <code>script</code> 标签中，不必要的代码删除掉</li>
 <li>清空 <code>src -&gt; components</code> 和 <code>src -&gt; mixins</code> 目录</li>
 <li>将梳理完毕后的项目，上传至码云</li>
 </ol>
-<h3 id="2-3-绘制-tabBar（小程序菜单栏）"><a href="#2-3-绘制-tabBar（小程序菜单栏）" class="headerlink" title="2.3 绘制 tabBar（小程序菜单栏）"></a>2.3 绘制 tabBar（小程序菜单栏）</h3><ol>
+<h3 id="3-绘制-tabBar（小程序菜单栏）"><a href="#3-绘制-tabBar（小程序菜单栏）" class="headerlink" title="3 绘制 tabBar（小程序菜单栏）"></a>3 绘制 tabBar（小程序菜单栏）</h3><ol>
 <li><p>新建 <code>src -&gt; pages -&gt; tabs</code> 文件夹，用来存放所有 tabBar 相关的页面</p>
 </li>
 <li><p>删除 <code>src -&gt; pages -&gt; index.wpy</code> 页面，并在 <code>tabs</code> 目录中，新建 <code>home.wpy</code>，<code>cates.wpy</code>，<code>search.wpy</code>，<code>cart.wpy</code>，<code>me.wpy</code> 五个 tabBar 相关的页面</p>
@@ -625,7 +625,7 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h3 id="2-4-修改导航栏样式"><a href="#2-4-修改导航栏样式" class="headerlink" title="2.4 修改导航栏样式"></a>2.4 修改导航栏样式</h3><p>打开 <code>src -&gt; app.wpy</code> 文件，找到 <code>window</code> 节点，并配置如下：</p>
+<h3 id="4-修改导航栏样式"><a href="#4-修改导航栏样式" class="headerlink" title="4 修改导航栏样式"></a>4 修改导航栏样式</h3><p>打开 <code>src -&gt; app.wpy</code> 文件，找到 <code>window</code> 节点，并配置如下：</p>
 <pre class="line-numbers language-js"><code class="language-js">window<span class="token punctuation">:</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">// 页面背景色</span>
   backgroundTextStyle<span class="token punctuation">:</span> <span class="token string">'dark'</span><span class="token punctuation">,</span>
@@ -636,7 +636,7 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
   <span class="token comment" spellcheck="true">// 导航条标题文字颜色</span>
   navigationBarTextStyle<span class="token punctuation">:</span> <span class="token string">'white'</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-为异步-API-启用-Promise-功能"><a href="#3-为异步-API-启用-Promise-功能" class="headerlink" title="3. 为异步 API 启用 Promise 功能"></a>3. 为异步 API 启用 Promise 功能</h2><ol>
+<h2 id="为异步-API-启用-Promise-功能"><a href="#为异步-API-启用-Promise-功能" class="headerlink" title="为异步 API 启用 Promise 功能"></a>为异步 API 启用 Promise 功能</h2><ol>
 <li><p>打开 <code>src -&gt; app.wpy</code> 文件</p>
 </li>
 <li><p>找到 constructor() 构造函数</p>
@@ -651,7 +651,7 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h2 id="4-优化"><a href="#4-优化" class="headerlink" title="4. 优化"></a>4. 优化</h2><h3 id="4-1-把页面的业务逻辑抽离到单独的-mixin-文件中"><a href="#4-1-把页面的业务逻辑抽离到单独的-mixin-文件中" class="headerlink" title="4.1 把页面的业务逻辑抽离到单独的 mixin 文件中"></a>4.1 把页面的业务逻辑抽离到单独的 <code>mixin</code> 文件中</h3><blockquote>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="1-把页面的业务逻辑抽离到单独的-mixin-文件中"><a href="#1-把页面的业务逻辑抽离到单独的-mixin-文件中" class="headerlink" title="1 把页面的业务逻辑抽离到单独的 mixin 文件中"></a>1 把页面的业务逻辑抽离到单独的 <code>mixin</code> 文件中</h3><blockquote>
 <p><em>Mixin 混合</em>   (<a href="https://wepyjs.github.io/wepy-docs/1.x/#/?id=mixin-混合" target="_blank" rel="noopener">https://wepyjs.github.io/wepy-docs/1.x/#/?id=mixin-混合</a>)</p>
 </blockquote>
 <blockquote>
@@ -679,7 +679,7 @@ npm install <span class="token operator">-</span>g wepy<span class="token operat
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h3 id="4-2-封装-baseToast-函数提示错误消息"><a href="#4-2-封装-baseToast-函数提示错误消息" class="headerlink" title="4.2 封装 baseToast 函数提示错误消息"></a>4.2 封装 <code>baseToast</code> 函数提示错误消息</h3><ol>
+<h3 id="2-封装-baseToast-函数提示错误消息"><a href="#2-封装-baseToast-函数提示错误消息" class="headerlink" title="2 封装 baseToast 函数提示错误消息"></a>2 封装 <code>baseToast</code> 函数提示错误消息</h3><ol>
 <li><p>为了提高项目的维护性、可用性、扩展性，可以将常用的 js 逻辑，封装到 <code>src -&gt; baseAPI.js</code> 文件中：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">import</span> wepy <span class="token keyword">from</span> <span class="token string">'wepy'</span>
 
