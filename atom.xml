@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangyk2015.github.io/"/>
-  <updated>2020-08-13T03:32:15.212Z</updated>
+  <updated>2020-09-11T08:04:22.695Z</updated>
   <id>https://zhangyk2015.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NIM游戏</title>
+    <link href="https://zhangyk2015.github.io/2020/09/11/nim-you-xi/"/>
+    <id>https://zhangyk2015.github.io/2020/09/11/nim-you-xi/</id>
+    <published>2020-09-11T03:33:41.000Z</published>
+    <updated>2020-09-11T08:04:22.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;学习自&lt;a href=&quot;https://web.stanford.edu/class/cs97si/05-combinatorial-games.pdf&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程算法" scheme="https://zhangyk2015.github.io/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://zhangyk2015.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发入门</title>
@@ -149,9 +176,9 @@
       <category term="编程算法" scheme="https://zhangyk2015.github.io/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="leetcode" scheme="https://zhangyk2015.github.io/tags/leetcode/"/>
-    
       <category term="算法" scheme="https://zhangyk2015.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="leetcode" scheme="https://zhangyk2015.github.io/tags/leetcode/"/>
     
   </entry>
   
