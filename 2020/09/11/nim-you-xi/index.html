@@ -494,7 +494,7 @@ $n$
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    930
+                    931
                 </div>
                 
 
@@ -557,13 +557,13 @@ $n$
 <ul>
 <li><p>给定状态 $S$ ，计算 $f(S)$ </p>
 </li>
-<li><p>如果已经知道 $f(S) , 直接返回</p>
+<li><p>如果已经知道 $f(S)$ , 直接返回</p>
 </li>
-<li><p>设置返回值 $x \leftarrow - \infty</p>
+<li><p>设置返回值 $x \leftarrow - \infty$</p>
 </li>
 <li><p>对每一个有效的下个状态 $T$:</p>
 <ul>
-<li>更新返回值 $x \leftarrow max{x, -f(T)}</li>
+<li>更新返回值 $x \leftarrow max{x, -f(T)}$</li>
 </ul>
 </li>
 <li><p>将 $f(S) = x $ 存下来，并且返回 $x$</p>
@@ -576,7 +576,7 @@ $n$
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><ul>
 <li><p>给定堆的大小 $n_1, n_2, \dots, n_m$</p>
 </li>
-<li><p>第一个玩家获胜的充分必要条件是 $n_1 \oplus n_2 \oplus \cdots n_m$ 的结果非零。$\oplus$ 是异或运算。</p>
+<li><p>第一个玩家获胜的充分必要条件是 $n_1 \oplus n_2 \oplus \cdots \oplus n_m$ 的结果非零。$\oplus$ 是异或运算。</p>
 </li>
 </ul>
 <p><strong>原因：</strong>  </p>
@@ -594,8 +594,8 @@ $n$
 </ul>
 </li>
 </ul>
-<p>*<em>G数计算方法: *</em></p>
-<p>从 $S$ 移动一步得到的状态为 $T_1, T_2, \dots, T_m$。状态 $S$的G数 $g(S) 是一个不会在 ${g(T_1), g(T_2), \dots, g(T_m)} 中出现的最小非负整数。</p>
+<p>** G数计算方法:  **</p>
+<p>从 $S$ 移动一步得到的状态为 $T_1, T_2, \dots, T_m$。状态 $S$的G数 $g(S) 是一个不会在 ${g(T_1), g(T_2), \dots, g(T_m)}$ 中出现的最小非负整数。</p>
 <ul>
 <li>Note：失败状态的G数是0</li>
 </ul>
